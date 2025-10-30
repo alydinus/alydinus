@@ -7,6 +7,11 @@ on:
   # Позволяет запускать вручную со вкладки Actions
   workflow_dispatch:
 
+# --- ВОТ НОВОЕ ИСПРАВЛЕНИЕ ---
+# Добавляем права на запись в репозиторий
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -15,17 +20,10 @@ jobs:
       - uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
-          
-          # 
-          # --- ВОТ ИСПРАВЛЕНИЕ ---
-          # 'svg_out_path' заменен на 'outputs'
-          #
           outputs: |
             output/snake.svg
 
       # Шаг 2: Загружаем в ветку 'output'
-      # Этот шаг остается без изменений, но теперь он будет работать,
-      # так как Шаг 1 создаст папку 'output'
       - name: Push to output branch
         uses: crazy-max/ghaction-github-pages@v3
         with:
