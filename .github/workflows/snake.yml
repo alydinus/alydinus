@@ -1,10 +1,9 @@
 name: Generate Snake
 
-# Запускать каждые 12 часов
 on:
   schedule:
     - cron: "0 */12 * * *"
-
+  
   # Позволяет запускать вручную со вкладки Actions
   workflow_dispatch:
 
@@ -12,23 +11,25 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      # Шаг 1: Генерируем саму змейку
+      # Шаг 1: Генерируем змейку
       - uses: Platane/snk@v3
         with:
-          # Указываем ваш никнейм на GitHub
           github_user_name: ${{ github.repository_owner }}
+          
+          # 
+          # --- ВОТ ИСПРАВЛЕНИЕ ---
+          # 'svg_out_path' заменен на 'outputs'
+          #
+          outputs: |
+            output/snake.svg
 
-          # Путь, куда будет сохранена SVG-анимация
-          svg_out_path: output/snake.svg
-
-      # Шаг 2: Загружаем сгенерированный файл в специальную ветку 'output'
+      # Шаг 2: Загружаем в ветку 'output'
+      # Этот шаг остается без изменений, но теперь он будет работать,
+      # так как Шаг 1 создаст папку 'output'
       - name: Push to output branch
         uses: crazy-max/ghaction-github-pages@v3
         with:
-          # Ветка, в которую будет загружен файл
           target_branch: output
-          # Папка, из которой берем файлы для загрузки
           build_dir: output
         env:
-          # Секретный токен, нужен для загрузки в репозиторий
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
