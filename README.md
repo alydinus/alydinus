@@ -10,7 +10,7 @@
     ╔══════════════════════════════════════════════════════════════════╗
     ║                                                                  ║
     ║   $ whoami                                                       ║
-    ║   > alydin — backend engineer who turns coffee into microservices ║
+    ║   > alydin — backend engineer who turns coffee into microservices║
     ║                                                                  ║
     ║   $ uptime                                                       ║
     ║   > coding since 2022 · still compiling…                         ║
