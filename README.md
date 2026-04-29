@@ -213,7 +213,7 @@ fun_fact: "I debug with print statements and I'm not ashamed"
   │   Thanks for visiting! May your code compile on the      │
   │   first try and your tests always pass. 🚀               │
   │                                                          │
-  │   ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀ │
+  │   ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀     │
   │   EOF — Connection closed.                               │
   │                                                          │
   └──────────────────────────────────────────────────────────┘
