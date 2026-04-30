@@ -7,18 +7,18 @@
 
 <!-- TERMINAL INTRO -->
 ```
-    ╔══════════════════════════════════════════════════════════════════╗
-    ║                                                                  ║
-    ║   $ whoami                                                       ║
-    ║   > alydin — backend engineer who turns coffee into microservices║
-    ║                                                                  ║
-    ║   $ uptime                                                       ║
-    ║   > coding since 2022 · still compiling…                         ║
-    ║                                                                  ║
-    ║   $ cat /etc/motto                                               ║
-    ║   > "Write code that even your future self can understand."      ║
-    ║                                                                  ║
-    ╚══════════════════════════════════════════════════════════════════╝
+    ╔═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗
+    ║                                                                                                                                                       ║
+    ║   $ whoami                                                                                                                                            ║
+    ║   > alydin — backend engineer who turns coffee into microservices                                                                                     ║
+    ║                                                                                                                                                       ║
+    ║   $ uptime                                                                                                                                            ║
+    ║   > coding since 2022 · still compiling…                                                                                                              ║
+    ║                                                                                                                                                       ║
+    ║   $ cat /etc/motto                                                                                                                                    ║
+    ║   > "Write code that even your future self can understand."                                                                                           ║
+    ║                                                                                                                                                       ║
+    ╚═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╝
 ```
 
 <div align="center">
